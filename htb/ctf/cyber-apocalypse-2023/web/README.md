@@ -94,6 +94,7 @@ Seems like we got a nasty OS command injection vulnerability which leads to Remo
 
 OS command injection (also known as shell injection) is basically a web security vulnerability that allows an attacker to execute arbitrary operating system (OS) commands on the server that is running an application.
 
+4. ### Exploit
 
 Given that let's try a command injection.
 
