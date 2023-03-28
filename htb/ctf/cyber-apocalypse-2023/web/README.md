@@ -1,5 +1,7 @@
 # Gunhead
 
+## Challenge
+
 During Pandora’s training, the Gunhead AI combat robot had been tampered with and was now malfunctioning, causing it to become uncontrollable. With the situation escalating rapidly, Pandora used her hacking skills to infiltrate the managing system of Gunhead and urgently needs to take it down.
 
 ![alt text](connection.png "Title")
@@ -12,11 +14,11 @@ Given that it is a web challenge we can just put http://134.209.186.79:31613 int
 
 ## Enumeration
 
-1. ### View Page source
+### View Page source
 
 The very first thing i do when dealing with web apps is to vie the source code of the page with simply righ clicking with the mouse on View Page Source or Inspect. Sometimes the developer forgets to remove the comments from which we could gain valueable information.
 
-2. ### Play around with the app
+### Play around with the app
    
 Looking at the homepage we can see some information and status about the robot.
 
@@ -43,7 +45,7 @@ But before we start poking around lets not just play around with no intention. L
  
 By typing /help we get 3 options. /clear /ping /storage. Trying the /storage command it just displays us some storage information. But looking at the /ping command we see that it also provides the parameter [device ip] as a user input. Means we can send a command to the system. The ping command is in both Windows and Linux a built-in command line function to send icmp packets to a network host. So it's clear that its triggering an instruction to the operating system. Can we exploit that ? Maybe by looking into the files which we could download initially we get some insights.
 
-3. ### Examining the source code
+## Examining the source code
    
 After opening the downloaded files it seems like we have the whole source code of the web app. 
 ```shell
@@ -94,8 +96,7 @@ Seems like we got a nasty OS command injection vulnerability which leads to Remo
 
 OS command injection (also known as shell injection) is basically a web security vulnerability that allows an attacker to execute arbitrary operating system (OS) commands on the server that is running an application.
 
-4. ### Exploit
-
+## Exploit
 Given that let's try a command injection.
 
 ![alt text](command_injection.png "Title")
