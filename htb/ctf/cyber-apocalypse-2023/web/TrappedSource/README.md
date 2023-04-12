@@ -14,7 +14,7 @@ The very first thing i do when dealing with web apps is to view the HTML source 
 
 ![alt text](view-source.png "Title")
 
-Oh wow that was an easy one ! Sometimes even the title of the challenge can guide you in the right direction. Trapped *Source*
+Oh wow that was an easy one ! Sometimes even the title of the challenge can guide you in the right direction. Trapped **Source**
 
 As i mentioned it's always goog practice to look at the HTML source code first.
 As we can see there is an embedded JavaScript script with an object which has the PIN to unlock. `correctPin: "8291"`.
