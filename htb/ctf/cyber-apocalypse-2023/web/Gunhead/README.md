@@ -16,7 +16,7 @@ Given that it is a web challenge so we can just put http://134.209.186.79:31613 
 
 ### View Page source
 
-The very first thing i do when dealing with web apps is to view the HTML source code of the page with simply right clicking with the mouse on View Page Source or Inspect. Sometimes the developer forgets to remove the comments from which we could gain valuable information.
+The very first thing i do when dealing with web apps is to view the HTML source code of the page with simply right clicking with the mouse on View Page Source or Inspect. Sometimes the developer forgets to remove the comments from which we could gain valuable information. Unfortunately there was nothing interesting to find.
 
 ### Playing around with the app
    
